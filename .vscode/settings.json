@@ -1,0 +1,16 @@
+{
+    "idf.portWin": "COM8",
+    "idf.openOcdConfigs": [
+        "board/esp32p4-builtin.cfg"
+    ],
+    "files.watcherExclude": {
+        "**/build/**": true,
+        "**/managed_components/**": true
+    },
+    "files.exclude": {
+        "**/build": true
+    },
+    "idf.espIdfPathWin": "c:\\Espressif\\frameworks\\esp-idf-6.1-dev",
+    "idf.toolsPathWin": "c:\\Espressif\\frameworks\\esp-idf-6.1-dev\\tools",
+    "idf.pythonInstallPath": "c:\\Espressif\\frameworks\\esp-idf-6.1-dev\\tools\\tools\\idf-python\\3.11.2\\python.exe"
+}
