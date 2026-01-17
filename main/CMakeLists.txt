@@ -1,0 +1,37 @@
+idf_component_register(
+    SRCS "ui_assets.c" "main.c" "wifi_manager.c" "bluetooth_manager.c" "data/database.c" "ui/ui_manager.c" "ui/ui_home.c" "ui/ui_animals.c" "ui/ui_settings.c" "ui/ui_popups.c" "ui/ui_gallery.c" "data/gallery_manager.c"
+    INCLUDE_DIRS "." "data" "ui"
+    REQUIRES
+        esp_lcd
+        esp_lcd_st7701
+        esp_lvgl_port
+        lvgl
+        esp_lcd_touch
+        esp_lcd_touch_gt911
+        esp_wifi_remote
+        esp_h264
+        esp_codec_dev
+        button
+        knob
+        esp32-camera
+        esp_io_expander_tca95xx_16bit
+        image_player
+        adc_mic
+        esp_mmap_assets
+        adc_battery_estimation
+    PRIV_REQUIRES
+        nvs_flash
+        driver
+        cjson
+        fatfs
+        sdmmc
+        vfs
+        esp_driver_sdmmc
+        esp_wifi
+        esp_netif
+        esp_event
+        esp_hosted
+        bt
+        esp_partition
+        esp_app_format
+)
